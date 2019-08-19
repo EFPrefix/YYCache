@@ -56,6 +56,12 @@ Installation
 3. Import \<YYCache/YYCache.h\>.
 
 
+### Swift Package Manager
+
+1. Add `.package(url: "https://github.com/EFPrefix/YYCache.git", .branch("master")),` to `dependencies` in your Package.swift
+2. Run `swift build` or `swift package generate-xcodeproj`
+3. `import YYCache`
+
 ### Manually
 
 1. Download all the files in the YYCache subdirectory.
@@ -135,6 +141,13 @@ iPhone 6 上，磁盘缓存每秒响应次数 (越高越好):
 1. 在 Cartfile 中添加 `github "ibireme/YYCache"`。
 2. 执行 `carthage update --platform ios` 并将生成的 framework 添加到你的工程。
 3. 导入 \<YYCache/YYCache.h\>。
+
+
+### Swift Package Manager
+
+1. 在 Package.swift 的 `dependencies` 中添加 `.package(url: "https://github.com/EFPrefix/YYCache.git", .branch("master")),`
+2. 通过 `swift build` 编译或者 `swift package generate-xcodeproj` 生成 Xcode 项目
+3. 在需要使用的代码中 `import YYCache`
 
 
 ### 手动安装
