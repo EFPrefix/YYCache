@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   s.source       = { :git => 'https://github.com/ibireme/YYCache.git', :tag => s.version.to_s }
   
   s.requires_arc = true
-  s.source_files = 'YYCache/*.{h,m}'
-  s.public_header_files = 'YYCache/*.{h}'
+  s.source_files = 'YYCache/**/*.{h,m}'
+  s.public_header_files = 'YYCache/include/*.{h}'
   
   s.libraries = 'sqlite3'
   s.frameworks = 'UIKit', 'CoreFoundation', 'QuartzCore' 

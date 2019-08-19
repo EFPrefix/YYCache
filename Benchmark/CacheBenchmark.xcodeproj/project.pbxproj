@@ -44,13 +44,13 @@
 		D9C586511F054B5E00320F3B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D9C586531F054B5E00320F3B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D9C586541F054B5E00320F3B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D9D583ED1F0554DE00CBBB61 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYCache.h; sourceTree = "<group>"; };
+		D9D583ED1F0554DE00CBBB61 /* YYCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYCache.h; path = include/YYCache.h; sourceTree = "<group>"; };
 		D9D583EE1F0554DE00CBBB61 /* YYCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYCache.m; sourceTree = "<group>"; };
-		D9D583EF1F0554DE00CBBB61 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYDiskCache.h; sourceTree = "<group>"; };
+		D9D583EF1F0554DE00CBBB61 /* YYDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYDiskCache.h; path = include/YYDiskCache.h; sourceTree = "<group>"; };
 		D9D583F01F0554DE00CBBB61 /* YYDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYDiskCache.m; sourceTree = "<group>"; };
-		D9D583F11F0554DE00CBBB61 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYKVStorage.h; sourceTree = "<group>"; };
+		D9D583F11F0554DE00CBBB61 /* YYKVStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYKVStorage.h; path = include/YYKVStorage.h; sourceTree = "<group>"; };
 		D9D583F21F0554DE00CBBB61 /* YYKVStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYKVStorage.m; sourceTree = "<group>"; };
-		D9D583F31F0554DE00CBBB61 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYMemoryCache.h; sourceTree = "<group>"; };
+		D9D583F31F0554DE00CBBB61 /* YYMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YYMemoryCache.h; path = include/YYMemoryCache.h; sourceTree = "<group>"; };
 		D9D583F41F0554DE00CBBB61 /* YYMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYMemoryCache.m; sourceTree = "<group>"; };
 		D9D5843E1F05579000CBBB61 /* PINCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PINCache.h; sourceTree = "<group>"; };
 		D9D5843F1F05579000CBBB61 /* PINCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PINCache.m; sourceTree = "<group>"; };
