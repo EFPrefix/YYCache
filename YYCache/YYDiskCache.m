@@ -11,7 +11,9 @@
 
 #import "YYDiskCache.h"
 #import "YYKVStorage.h"
+#if __has_include(<UIKit/UIKit.h>)
 #import <UIKit/UIKit.h>
+#endif
 #import <CommonCrypto/CommonCrypto.h>
 #import <objc/runtime.h>
 #import <time.h>
@@ -159,7 +161,9 @@ static void _YYDiskCacheSetGlobal(YYDiskCache *cache) {
 #pragma mark - public
 
 - (void)dealloc {
+    #if __has_include(<UIKit/UIKit.h>)
     [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationWillTerminateNotification object:nil];
+    #endif
 }
 
 - (instancetype)init {
@@ -205,7 +209,9 @@ static void _YYDiskCacheSetGlobal(YYDiskCache *cache) {
     [self _trimRecursively];
     _YYDiskCacheSetGlobal(self);
     
+    #if __has_include(<UIKit/UIKit.h>)
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(_appWillBeTerminated) name:UIApplicationWillTerminateNotification object:nil];
+    #endif
     return self;
 }
 

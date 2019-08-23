@@ -10,7 +10,10 @@
 //
 
 #import "YYKVStorage.h"
+#if __has_include(<UIKit/UIKit.h>)
 #import <UIKit/UIKit.h>
+#endif
+#import <QuartzCore/QuartzCore.h>
 #import <time.h>
 
 #if __has_include(<sqlite3.h>)
@@ -56,6 +59,7 @@ static NSString *const kTrashDirectoryName = @"trash";
  create index if not exists last_access_time_idx on manifest(last_access_time);
  */
 
+#if __has_include(<UIKit/UIKit.h>)
 /// Returns nil in App Extension.
 static UIApplication *_YYSharedApplication() {
     static BOOL isAppExtension = NO;
@@ -70,6 +74,7 @@ static UIApplication *_YYSharedApplication() {
     return isAppExtension ? nil : [UIApplication performSelector:@selector(sharedApplication)];
 #pragma clang diagnostic pop
 }
+#endif
 
 
 @implementation YYKVStorageItem
@@ -727,11 +732,15 @@ static UIApplication *_YYSharedApplication() {
 }
 
 - (void)dealloc {
+    #if __has_include(<UIKit/UIKit.h>)
     UIBackgroundTaskIdentifier taskID = [_YYSharedApplication() beginBackgroundTaskWithExpirationHandler:^{}];
+    #endif
     [self _dbClose];
+    #if __has_include(<UIKit/UIKit.h>)
     if (taskID != UIBackgroundTaskInvalid) {
         [_YYSharedApplication() endBackgroundTask:taskID];
     }
+    #endif
 }
 
 - (BOOL)saveItem:(YYKVStorageItem *)item {
